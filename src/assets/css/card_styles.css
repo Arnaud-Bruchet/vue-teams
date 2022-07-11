@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
+#app, body {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -9,6 +9,7 @@ body {
   background:url("../img/background.jpg");
   overflow: hidden;
 }
+
 .card {
   display: grid;
   grid-template-columns: 300px;
@@ -21,7 +22,6 @@ body {
   text-align: center;
   margin:30px;
 }
-
 
 .card-image {
   grid-area: image;
