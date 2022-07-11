@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <div class="card-stats">
-      <div class="stat" v-for="(techno, index) in stack" :key="index">
-        <div class="techno">{{techno.label}}</div>
-        <div class="level">{{leveling(techno.level)}}</div>
-      </div>
+  <div class="card-stats">
+    <div :class="[{border: index>0}, 'stat']" v-for="(techno, index) in stack" :key="index">
+      <div class="techno">{{techno.label}}</div>
+      <div class="level">{{leveling(techno.level)}}</div>
     </div>
   </div>
 </template>
@@ -13,9 +11,9 @@
 export default {
   name: "TeamTechno",
   created() {},
-  data() {
-    return {};
-  },
+  data: () => ({
+
+  }),
   props: {
     stack: {
       type: Array,
